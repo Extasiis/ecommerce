@@ -1,17 +1,24 @@
-import React from "react"
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import React from 'react';
+import './scss/main.scss';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Home from './components/Home'
-import CategoriaId from "./components/CategoriaId";
+import Landing from './views/Landing/index'
+import Categoria from './views/Categoria/index'
+import SignIn from './views/SignIn'
+import SignUp from './views/SignUp'
+
 
 function App() {
   return (
     <Router>
       <Switch>
-          <Route path="/home" component={Home} />
-          <Route path="/categoria/:id" component={CategoriaId} />
+        <Route path="/categoria/:id" component={Categoria} exact></Route>
+        <Route path="/signUp" component={SignUp} />
+        <Route path="/signIn" component={SignIn} />
+        <Route path="/" component={Landing} exact></Route>
       </Switch>
     </Router>
+
   );
 }
 

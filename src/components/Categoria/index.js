@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
-import './style.scss'
+
 
 
 const Categoria = () => {
@@ -15,7 +15,7 @@ const Categoria = () => {
     ]);
     return (
         <div className="container">
-            <h3 className="categoria">Categoria</h3>
+            <h2 class="cat-center">Categorias</h2>
                 <ul className="row">
                     {
                         categoria.map(item => (

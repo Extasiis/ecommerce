@@ -7,10 +7,14 @@ $bg-color: #fff;
 }
 
 .container {
-  padding-left: 4em;
-  padding-right: 4em;
+  max-width: 1110px;
+  margin: auto;
+  width: 100%;
 }
-
+.cat-center {
+  text-align: center;
+  padding-top: 40px;
+}
 .categoria{
   font-style: normal;
   font-weight: bold;
@@ -21,9 +25,10 @@ $bg-color: #fff;
 
 .row {
   width: 100%;
-  justify-content: flex-start;
+  justify-content: center;
   display: flex;
   flex-flow: row wrap;
+  padding: 0;
 }
 
 html,
