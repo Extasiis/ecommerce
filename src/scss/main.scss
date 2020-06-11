@@ -4,7 +4,6 @@
 @import 'category';
 @import 'carousel';
 @import 'carouselitem';
-@import 'productRelated';
 @import 'login';
 @import 'btn';
 
@@ -18,9 +17,11 @@ html {
     width: 100%;
     height: 100%;
 }
+
 body {
     padding: 0;
      margin: 0;
     font-family: 'Raleway', sans-serif;
 
 }
+ 
