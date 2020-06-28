@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+
+import Nav from '../../components/Menu/Nav'
+import Menu from '../../components/Menu/Menu'
+import Filtrar from '../../components/Filtrar'
+import Footer from '../../components/Footer'
 
 const Categoria = () => {
         return(
-            <h1>ads</h1>
+            <Fragment>
+                <Nav/>
+                <Menu/>
+                <Filtrar />
+                <Footer />
+            </Fragment>
         )
 
 }

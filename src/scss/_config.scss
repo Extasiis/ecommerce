@@ -5,7 +5,7 @@ $letter-color: #858585;
 $alert-color : #FF7A7A;
 //Typography
 $tipografia-general: sans-serif,arial ,Times;
-
+ 
 
 
 // Media Query Mixins
@@ -32,3 +32,37 @@ $tipografia-general: sans-serif,arial ,Times;
       @content;
     }
   }
+
+  //texto
+.text-primary{
+  @include texto($primary-color)
+}
+
+.text-secondary{
+  @include texto($secondary-color)
+}
+
+.text-letter{
+  @include texto($letter-color)
+}
+
+.text-alert{
+  @include texto($alert-color)
+}
+
+//background
+.background-primary{
+  @include background($primary-color)
+}
+
+.background-secondary{
+  @include background($secondary-color)
+}
+
+.background-letter{
+  @include background($letter-color)
+}
+
+.background-alert{
+  @include background($alert-color)
+}

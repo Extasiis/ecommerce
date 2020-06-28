@@ -1,34 +1,45 @@
-@mixin btn ($color, $bgColor, $bcolor: none){
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    user-select: none;
-    background-color: transparent;
-    font-size: 1rem;
-    padding: 1rem;
-    font-weight: bold;
-    font-size: 18px;
-    background-color: $bgColor;
-    color: $color;
-    border: $bcolor;
-}
-
 .btn-primary{
-    @include btn($primary-color, $secondary-color);
-    &:hover {
-        background: rgb(14, 170, 121);
-        color: #fff;
-      }
+    @include btn($primary-color,$secondary-color);
+    &:hover{
+        background:rgb(14, 170, 121);
+        color :#fff;
+    }
     &:active{
         background: $secondary-color;
-        color: $primary-color;
-    } 
-}
-.btn-secondary{
-    @include btn($letter-color, #fff, 1px solid $letter-color);
+        color:$primary-color
+    }
+
 }
 
-.btn-block {
-    display: block;
+.btn-secondary{
+    @include btn($letter-color,#fff,1px solid $letter-color)
+
+}
+
+.ico-primary{
+    @include ico($secondary-color);
+    &:hover{
+        color: rgb(14, 170, 121);
+    }
+}
+
+.ico-secondary{
+    @include ico($letter-color);
+    &:hover{
+        color: $secondary-color
+    }
+}
+
+
+
+.ico-alert{
+    @include ico($letter-color);
+    &:hover{
+        color: $alert-color
+    }
+}
+
+.btn-block{
+    display:block;
     width: 100%;
 }
